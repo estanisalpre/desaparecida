@@ -310,7 +310,7 @@ main{
                 .homePage{
                     padding-top: 50px;
                     background-color: #282828;
-                    background-image: url(../public/assets/imgs/backgrounds/anaBackground.webp);
+                    background-image: url(./public/assets/imgs/backgrounds/anaBackground.webp);
 
                     .callApp{
                         animation: appFadeIn 0.5s ease forwards;
@@ -373,7 +373,7 @@ main{
 
                 //Second page
                 .secondPage{
-                    background-image: url(../public/assets/imgs/backgrounds/anaBackground.webp);
+                    background-image: url(./public/assets/imgs/backgrounds/anaBackground.webp);
                     display: none;
 
                     .secondPageApps{
@@ -408,7 +408,7 @@ main{
                 .allAppsPage{
                     display: none;
                     justify-content: center;
-                    background-image: url(../public/assets/imgs/backgrounds/anaBackground.webp);
+                    background-image: url(./public/assets/imgs/backgrounds/anaBackground.webp);
 
                     div{
                         @include sizes(100%,90%);
