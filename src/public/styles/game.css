@@ -1,0 +1,743 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+body {
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  font-family: "Afacad", serif;
+}
+
+nav {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  gap: 25px;
+  cursor: default;
+  background-color: #455263;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-family: "Chakra Petch", serif;
+  z-index: 10000;
+}
+nav img {
+  width: 70px;
+  height: 70px;
+  margin-top: 50px;
+  border: 3px solid rgb(160, 160, 160);
+  background-image: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
+}
+nav ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 2px solid rgb(160, 160, 160);
+  cursor: pointer;
+}
+nav ul li img {
+  width: 25px;
+  height: 25px;
+  border: 0px solid rgb(71, 70, 70);
+  background-image: none;
+  margin-top: 0px;
+}
+nav ul li span {
+  font-size: 16px;
+  color: #e6e6e6;
+}
+nav ul li:hover {
+  background-color: #60728a;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 25px;
+}
+main .mainContainer {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  cursor: default;
+}
+main .mainContainer i {
+  position: absolute;
+  width: 2px;
+  height: 10px;
+  top: -10px;
+  animation: rain linear infinite;
+  background: #d3d3d3;
+  z-index: 10;
+}
+main .mainContainer .vapour {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: vapour 10s linear infinite;
+  z-index: 10;
+}
+main .mainContainer .progressContainer {
+  width: 90%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  z-index: 11;
+}
+main .mainContainer .progressContainer .progressBar {
+  border: 1px solid black;
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0px 0px 20px 1px rgb(38, 38, 38);
+}
+main .mainContainer .progressContainer .progressBar div {
+  width: 100%;
+  height: 100%;
+  background-color: #c9ff93;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+main .mainContainer .progressContainer .progressBar div span {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+main .mainContainer .progressContainer .progressBar div:nth-child(6) {
+  background-color: #f6ff93;
+}
+main .mainContainer .progressContainer div:nth-child(7) {
+  background-color: #f6ff93;
+}
+main .mainContainer .progressContainer div:nth-child(8) {
+  background-color: #f6ff93;
+}
+main .mainContainer .progressContainer div:nth-child(9) {
+  background-color: #f6ff93;
+}
+main .mainContainer .progressContainer div:nth-child(10) {
+  background-color: #f6ff93;
+}
+main .mainContainer .progressContainer div:nth-child(11) {
+  background-color: #f6ff93;
+}
+main .mainContainer .progressContainer div:nth-child(12) {
+  background-color: #ffd993;
+}
+main .mainContainer .progressContainer div:nth-child(13) {
+  background-color: #ffd993;
+}
+main .mainContainer .progressContainer div:nth-child(14) {
+  background-color: #ffd993;
+}
+main .mainContainer .progressContainer div:nth-child(15) {
+  background-color: #ffd993;
+}
+main .mainContainer .progressContainer div:nth-child(16) {
+  background-color: #ffd993;
+}
+main .mainContainer .progressContainer div:nth-child(17) {
+  background-color: #ff9393;
+}
+main .mainContainer .progressContainer div:nth-child(18) {
+  background-color: #ff9393;
+}
+main .mainContainer .progressContainer div:nth-child(19) {
+  background-color: #ff9393;
+}
+main .mainContainer .progressContainer div:nth-child(20) {
+  background-color: #ff9393;
+}
+main .mainContainer .progressContainer div:nth-child(21) {
+  background-color: #ff8282;
+}
+main .mainContainer .progressContainer div:nth-child(22) {
+  background-color: #fe8282;
+}
+main .mainContainer .progressContainer div:nth-child(23) {
+  background-color: #ff5858;
+}
+main .mainContainer .progressContainer div:nth-child(24) {
+  background-color: #ff5858;
+}
+main .mainContainer .progressContainer div:nth-child(25) {
+  background-color: #ff5858;
+}
+main .mainContainer .progressContainer .progressSelector {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+main .mainContainer .progressContainer .progressSelector div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  animation: progressSelector 5s ease infinite;
+}
+main .mainContainer .cellphoneContainer {
+  border-top: 1px solid rgb(29, 29, 29);
+  border-bottom: 1px solid rgb(29, 29, 29);
+  border-right: 10px solid rgb(29, 29, 29);
+  box-shadow: 20px 20px 40px 10px rgb(23, 23, 23);
+  width: 400px;
+  height: 90%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  background-color: black;
+  z-index: 12;
+}
+main .mainContainer .cellphoneContainer .topCellphone {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+main .mainContainer .cellphoneContainer .topCellphone .cameraContainer {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+main .mainContainer .cellphoneContainer .topCellphone .cameraContainer .camera {
+  width: 25px;
+  height: 80%;
+  border-radius: 50%;
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+main .mainContainer .cellphoneContainer .topCellphone .cameraContainer .camera div {
+  width: 15px;
+  height: 70%;
+  box-shadow: 0px 0px 5px 1px #3c3c3c;
+  border-radius: 50%;
+}
+main .mainContainer .cellphoneContainer .screenCellphone {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+main .mainContainer .cellphoneContainer .screenCellphone div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .mainContainer .cellphoneContainer .screenCellphone .navCellphone {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  background-color: black;
+  z-index: 1000;
+}
+main .mainContainer .cellphoneContainer .screenCellphone .navCellphone .leftNavContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 5px;
+  gap: 5px;
+}
+main .mainContainer .cellphoneContainer .screenCellphone .navCellphone .leftNavContainer span {
+  color: white;
+  font-size: 14px;
+}
+main .mainContainer .cellphoneContainer .screenCellphone .navCellphone .rightNavContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-end;
+  padding-right: 5px;
+}
+main .mainContainer .cellphoneContainer .screenCellphone .navCellphone .rightNavContainer img {
+  width: auto;
+  height: 100%;
+}
+main .mainContainer .cellphoneContainer .screenCellphone .homePage {
+  padding-top: 50px;
+  background-color: #282828;
+  background-image: url(/src/public/assets/imgs/backgrounds/anaBackground.webp);
+}
+main .mainContainer .cellphoneContainer .screenCellphone .homePage .callApp {
+  animation: appFadeIn 0.5s ease forwards;
+}
+main .mainContainer .cellphoneContainer .screenCellphone .homePage .weather {
+  border-radius: 20px;
+  width: 50%;
+  height: 100px;
+  -webkit-backdrop-filter: blur(200px);
+          backdrop-filter: blur(200px);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  top: 50px;
+}
+main .mainContainer .cellphoneContainer .screenCellphone .homePage .weather img {
+  width: auto;
+  height: 100%;
+}
+main .mainContainer .cellphoneContainer .screenCellphone .homePage .weather span {
+  font-size: 50px;
+  color: #e6e6e6;
+}
+main .mainContainer .cellphoneContainer .screenCellphone .homePage .homeApps {
+  width: 80%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: -30px;
+}
+main .mainContainer .cellphoneContainer .screenCellphone .homePage .homeApps img {
+  width: 80px;
+  height: auto;
+  cursor: pointer;
+}
+main .mainContainer .cellphoneContainer .screenCellphone .homePage .fixedApps {
+  width: 80%;
+  height: 80px;
+  border-radius: 20px;
+  padding: 10px;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0px 0px 5px 1px rgb(36, 36, 36);
+}
+main .mainContainer .cellphoneContainer .screenCellphone .homePage .fixedApps img {
+  width: 70px;
+  height: auto;
+  cursor: pointer;
+}
+main .mainContainer .cellphoneContainer .screenCellphone .homePage .changePage {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 25%;
+  height: 30px;
+  margin-bottom: 10px;
+  gap: 20px;
+}
+main .mainContainer .cellphoneContainer .screenCellphone .homePage .changePage div {
+  background-color: #d0d0d0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+main .mainContainer .cellphoneContainer .screenCellphone .secondPage {
+  background-image: url(/src/public/assets/imgs/backgrounds/anaBackground.webp);
+  display: none;
+}
+main .mainContainer .cellphoneContainer .screenCellphone .secondPage .secondPageApps {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+main .mainContainer .cellphoneContainer .screenCellphone .secondPage .secondPageApps img {
+  width: 70px;
+  height: auto;
+  cursor: pointer;
+  animation: appFadeIn 0.5s ease forwards;
+}
+main .mainContainer .cellphoneContainer .screenCellphone .secondPage .changePage {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 25%;
+  height: 30px;
+  margin-bottom: 10px;
+  gap: 20px;
+}
+main .mainContainer .cellphoneContainer .screenCellphone .secondPage .changePage div {
+  background-color: #d0d0d0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+main .mainContainer .cellphoneContainer .screenCellphone .allAppsPage {
+  display: none;
+  justify-content: center;
+  background-image: url(/src/public/assets/imgs/backgrounds/anaBackground.webp);
+}
+main .mainContainer .cellphoneContainer .screenCellphone .allAppsPage div {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  gap: 20px;
+}
+main .mainContainer .cellphoneContainer .screenCellphone .allAppsPage div img {
+  width: 80px;
+  height: auto;
+  transform: scale(0.0001);
+  animation: appFadeIn 0.5s ease forwards;
+  cursor: pointer;
+}
+main .mainContainer .cellphoneContainer .screenCellphone .appPage {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  background-image: url(/src/public/assets/imgs/backgrounds/anaBackground.webp);
+}
+main .mainContainer .cellphoneContainer .screenCellphone .appPage span {
+  color: #e6e6e6;
+}
+main .mainContainer .cellphoneContainer .buttonsCellphone {
+  border-top: 1px solid rgb(33, 33, 33);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  background-color: black;
+}
+main .mainContainer .cellphoneContainer .buttonsCellphone div {
+  width: 60px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+main .mainContainer .cellphoneContainer .buttonsCellphone div img {
+  cursor: pointer;
+  width: auto;
+  height: 60%;
+}
+
+.modalManual, .modalNotepad, .modalClues, .modalMusic {
+  border: 3px solid rgb(160, 160, 160);
+  position: absolute;
+  left: 50px;
+  width: 500px;
+  height: 600px;
+  box-shadow: 0px 0px 50px 5px rgb(34, 34, 34);
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Chakra Petch", serif;
+  cursor: default;
+  overflow: hidden;
+  display: none;
+  opacity: 0;
+  animation: modalIn 0.5s ease forwards;
+}
+.modalManual h3, .modalNotepad h3, .modalClues h3, .modalMusic h3 {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #485563;
+  color: #e6e6e6;
+  border-bottom: 1px solid rgb(160, 160, 160);
+}
+.modalManual h3 img, .modalNotepad h3 img, .modalClues h3 img, .modalMusic h3 img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.modalManual div, .modalNotepad div, .modalClues div, .modalMusic div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #485563;
+}
+
+.modalLogout {
+  border: 3px solid rgb(160, 160, 160);
+  position: absolute;
+  right: 25px;
+  top: 50px;
+  width: 400px;
+  height: 200px;
+  box-shadow: 0px 0px 50px 5px rgb(34, 34, 34);
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Chakra Petch", serif;
+  cursor: default;
+  overflow: hidden;
+  display: none;
+  opacity: 0;
+  animation: modalIn 0.5s ease forwards;
+}
+.modalLogout h3 {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  align-items: flex-start;
+  padding-left: 10px;
+  background-color: #485563;
+  color: #e6e6e6;
+  font-size: 16px;
+}
+.modalLogout h3 img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.modalLogout div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #485563;
+}
+.modalLogout div span {
+  width: 100%;
+  height: 100%;
+  color: #e6e6e6;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.modalLogout div div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+.modalLogout div div button {
+  padding: 5px;
+  border: 1px solid rgb(160, 160, 160);
+  background-color: transparent;
+  font-family: "Chakra Petch", serif;
+  width: 140px;
+  height: 40px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  color: #e6e6e6;
+  cursor: pointer;
+  font-size: 14px;
+}
+.modalLogout div div button:hover {
+  background-color: #60728a;
+}
+
+footer {
+  position: fixed;
+  left: 5px;
+  bottom: 5px;
+  width: 250px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  background-color: #455263;
+  border: 3px solid rgb(160, 160, 160);
+  font-family: "Teko", serif;
+  cursor: default;
+  padding-left: 5px;
+  padding-right: 5px;
+  gap: 5px;
+  z-index: 11;
+}
+footer span {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+footer img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+@keyframes progressSelector {
+  0% {
+    transform: scale(1) translateY(0px);
+  }
+  25% {
+    transform: scale(1.3) translateY(-5px);
+  }
+  50% {
+    transform: scale(1) translateY(0px);
+  }
+  100% {
+    transform: scale(1) translateY(0px);
+  }
+}
+@keyframes vapour {
+  0%, 100% {
+    -webkit-backdrop-filter: blur(0);
+            backdrop-filter: blur(0);
+  }
+  50% {
+    -webkit-backdrop-filter: blur(1px);
+            backdrop-filter: blur(1px);
+  }
+}
+@keyframes rain {
+  0% {
+    top: -10px;
+  }
+  100% {
+    top: 100vh;
+  }
+}
+@keyframes modalIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appFadeIn {
+  0% {
+    transform: scale(0.0001);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}/*# sourceMappingURL=game.css.map */

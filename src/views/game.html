@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecos del Celular: Game</title>
+    <!-- LINK CSS -->
+     <link rel="stylesheet" href="/src/public/styles/game.css">
+    <!-- LINK GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAV -->
+    <nav>
+        <img src="/src/public/assets/imgs/icons/profiles/women-3.png" alt="User Profile Image">
+        <ul>
+            <li class="gameUi" data-id="1"><img src="/src/public/assets/imgs/icons/nav/manual.png" alt="Game Manual Icon"><span>Manual</span></li>
+            <li class="gameUi" data-id="2"><img src="/src/public/assets/imgs/icons/nav/notepad.png" alt="Player Notepad Icon"><span>Notas</span></li>
+            <li class="gameUi" data-id="3"><img src="/src/public/assets/imgs/icons/nav/clue.png" alt="Clues Icon"><span>Pistas</span></li>
+            <li class="gameUi" data-id="4"><img src="/src/public/assets/imgs/icons/nav/musicPanel.png" alt="Music and Volume Panel Icon"><span>Música</span></li>
+            <li class="gameUi" data-id="5"><img src="/src/public/assets/imgs/icons/nav/logout.png" alt="Logout/Exit Icon"><span>Salir</span></li>
+        </ul>
+    </nav>
+    <!-- MAIN -->
+    <main>
+        <!-- CELULAR  -->
+        <section id="mainContainer" class="mainContainer">
+            <div class="vapour"></div>
+            <div class="progressContainer">
+                <div class="progressSelector">
+                    <div id="05">🔻</div>
+                    <div id="010"></div>
+                    <div id="015"></div>
+                    <div id="020"></div>
+                    <div id="025"></div>
+                    <div id="030"></div>
+                    <div id="035"></div>
+                    <div id="040"></div>
+                    <div id="045"></div>
+                    <div id="050"></div>
+                    <div id="055"></div>
+                    <div id="060"></div>
+                    <div id="065"></div>
+                    <div id="070"></div>
+                    <div id="075"></div>
+                    <div id="080"></div>
+                    <div id="085"></div>
+                    <div id="090"></div>
+                    <div id="095"></div>
+                    <div id="0100"></div>
+                </div>
+                <div class="progressBar">
+                    <div id="24"><span>24</span></div>
+                    <div id="23"><span>23</span></div>
+                    <div id="22"><span>22</span></div>
+                    <div id="21"><span>21</span></div>
+                    <div id="20"><span>20</span></div>
+                    <div id="19"><span>19</span></div>
+                    <div id="18"><span>18</span></div>
+                    <div id="17"><span>17</span></div>
+                    <div id="16"><span>16</span></div>
+                    <div id="15"><span>15</span></div>
+                    <div id="14"><span>14</span></div>
+                    <div id="13"><span>13</span></div>
+                    <div id="12"><span>12</span></div>
+                    <div id="11"><span>11</span></div>
+                    <div id="10"><span>10</span></div>
+                    <div id="9"><span>9</span></div>
+                    <div id="8"><span>8</span></div>
+                    <div id="7"><span>7</span></div>
+                    <div id="6"><span>6</span></div>
+                    <div id="5"><span>5</span></div>
+                    <div id="4"><span>4</span></div>
+                    <div id="3"><span>3</span></div>
+                    <div id="2"><span>2</span></div>
+                    <div id="1"><span>1</span></div>
+                    <div id="0">💀</div>
+                </div>
+            </div>
+            <!-- APPS Y CELULAR PRINCIPAL -->
+            <div class="cellphoneContainer">
+                <div class="topCellphone">
+                    <div class="cameraContainer">
+                        <div class="camera"><div></div></div>
+                    </div>
+                </div>
+                <!--  PANTALLA CELULAR -->
+                <div class="screenCellphone">
+                    <div class="navCellphone">
+                        <div class="leftNavContainer">
+                            <span id="date" class="date"></span><span id="clock"></span>
+                        </div>
+                        <div class="rightNavContainer">
+                            <img src="/src/public/assets/imgs/icons/sound.png" alt="Sound Icon">
+                            <img src="/src/public/assets/imgs/icons/network.png" alt="Network Mobile Phone Icon">
+                            <img src="/src/public/assets/imgs/icons/battery.png" alt="Battery Icon">
+                        </div>
+                    </div>
+                    <div id="homePage" class="homePage">
+                        <div class="weather">
+                            <img src="/src/public/assets/imgs/gifs/rainning.gif" alt="Rainning Weather in animation gif">
+                            <span>13°C</span>
+                        </div>
+                        <div class="homeApps">
+                            <img class="cellApp" data-id="2" src="/src/public/assets/imgs/icons/allApps/email.png" alt="">
+                            <img class="cellApp" data-id="12" src="/src/public/assets/imgs/icons/allApps/gallery.png" alt="">
+                            <img class="cellApp" data-id="9" src="/src/public/assets/imgs/icons/allApps/contacts.png" alt="">
+                            <img class="cellApp" data-id="15" src="/src/public/assets/imgs/icons/allApps/sms.png" alt="">
+                            <img class="cellApp" data-id="7" src="/src/public/assets/imgs/icons/allApps/clock.png" alt="">
+                            <img class="cellApp" data-id="10" src="/src/public/assets/imgs/icons/allApps/documents.png" alt="">
+                        </div>
+                        <div class="fixedApps">
+                            <img class="cellApp" data-id="4" src="/src/public/assets/imgs/icons/allApps/callApp.png" alt="">
+                            <img class="cellApp" data-id="6" src="/src/public/assets/imgs/icons/allApps/chat.png" alt="">
+                            <img class="cellApp" data-id="1" src="/src/public/assets/imgs/icons/allApps/bank.png" alt="">
+                        </div>
+                        <div class="changePage">
+                            <div id="firstPageBtn" class="firstPageBtn"></div>
+                            <div id="secondPageBtn" class="secondPageBtn"></div>
+                        </div>
+                    </div>
+                    <div id="secondPage" class="secondPage">
+                        <div class="secondPageApps">
+                            <img class="cellApp" src="/src/public/assets/imgs/icons/allApps/calendar.png" alt="">
+                            <img class="cellApp" src="/src/public/assets/imgs/icons/allApps/camera.png" alt="">
+                            <img class="cellApp" data-id="8" src="/src/public/assets/imgs/icons/allApps/configuration.png" alt="">
+                            <img class="cellApp" data-id="11" src="/src/public/assets/imgs/icons/allApps/download.png" alt="">
+                            <img class="cellApp" data-id="13" src="/src/public/assets/imgs/icons/allApps/internet.png" alt="">
+                            <img class="cellApp" data-id="14" src="/src/public/assets/imgs/icons/allApps/maps.png" alt="">
+                            <img class="cellApp" data-id="16" src="/src/public/assets/imgs/icons/allApps/unknown.png" alt="">
+                        </div>
+                        <div class="changePage">
+                            <div id="firstPageBtn" class="firstPageBtn"></div>
+                            <div id="secondPageBtn" class="secondPageBtn"></div>
+                        </div>
+                    </div>
+                    <!-- ALL APPS -->
+                    <div id="allAppsPage" class="allAppsPage">
+                        <div class="allApps">
+                            <img class="cellApp" data-id="1" src="/src/public/assets/imgs/icons/allApps/bank.png" alt="">
+                            <img class="cellApp" data-id="2" src="/src/public/assets/imgs/icons/allApps/email.png" alt="">
+                            <img class="cellApp" src="/src/public/assets/imgs/icons/allApps/calendar.png" alt="">
+                            <img class="cellApp" data-id="3" src="/src/public/assets/imgs/icons/allApps/callApp.png" alt="">
+                            <img class="cellApp" src="/src/public/assets/imgs/icons/allApps/camera.png" alt="">
+                            <img class="cellApp" data-id="4" src="/src/public/assets/imgs/icons/allApps/chat.png" alt="">
+                            <img class="cellApp" data-id="5" src="/src/public/assets/imgs/icons/allApps/clock.png" alt="">
+                            <img class="cellApp" data-id="6" src="/src/public/assets/imgs/icons/allApps/configuration.png" alt="">
+                            <img class="cellApp" data-id="7" src="/src/public/assets/imgs/icons/allApps/contacts.png" alt="">
+                            <img class="cellApp" data-id="8" src="/src/public/assets/imgs/icons/allApps/documents.png" alt="">
+                            <img class="cellApp" data-id="9" src="/src/public/assets/imgs/icons/allApps/download.png" alt="">
+                            <img class="cellApp" data-id="10" src="/src/public/assets/imgs/icons/allApps/gallery.png" alt="">
+                            <img class="cellApp" data-id="11" src="/src/public/assets/imgs/icons/allApps/internet.png" alt="">
+                            <img class="cellApp" data-id="12" src="/src/public/assets/imgs/icons/allApps/maps.png" alt="">
+                            <img class="cellApp" data-id="13" src="/src/public/assets/imgs/icons/allApps/sms.png" alt="">
+                            <img class="cellApp" data-id="14" src="/src/public/assets/imgs/icons/allApps/unknown.png" alt="">
+                        </div>
+                    </div>
+                    <!-- BANK PAGE -->
+                    <div class="appPage" data-id="1"><span>Bank</span></div>
+                    <!-- EMAIL PAGE -->
+                    <div class="appPage" data-id="2"><span>Email</span></div>
+                    <!-- CALL APP PAGE -->
+                    <div class="appPage" data-id="3"><span>Call App</span></div>
+                    <!-- CHAT APP PAGE -->
+                    <div class="appPage" data-id="4"></div>
+                    <!-- CLOCK PAGE -->
+                    <div class="appPage" data-id="5"></div>
+                    <!-- CONFIGURATION PAGE -->
+                    <div class="appPage" data-id="6"></div>
+                    <!-- CONTACTS PAGE -->
+                    <div class="appPage" data-id="7"></div>
+                    <!-- DOCUMENTS PAGE -->
+                    <div class="appPage" data-id="8"></div>
+                    <!-- DOWNLOAD PAGE -->
+                    <div class="appPage" data-id="9"></div>
+                    <!-- GALLERY PAGE -->
+                    <div class="appPage" data-id="10"></div>
+                    <!-- INTERNET PAGE -->
+                    <div class="appPage" data-id="11"></div>
+                    <!-- MAPS PAGE -->
+                    <div class="appPage" data-id="12"></div>
+                    <!-- SMS PAGE -->
+                    <div class="appPage" data-id="13"></div>
+                    <!-- UNKNOWN PAGE -->
+                    <div class="appPage" data-id="14"></div>
+                </div>
+                <!-- BOTONES NAVEGACIÓN -->
+                <div class="buttonsCellphone">
+                   <!--  <div class="backButton"><img src="" alt="Back Cellphone Button Icon"></div> -->
+                    <div class="appsButton"><img id="homeBtn" src="/src/public/assets/imgs/icons/celButtons/homeButton.png" alt="Home Cellphone Button Icon"></div>
+                    <div class="homeButton"><img id="allAppsBtn" src="/src/public/assets/imgs/icons/celButtons/allAppsButton.png" alt="AllApp Cellphone Button Icon"></div>
+                </div>
+            </div>
+        </section>
+        <!-- MODALES -->
+        <section id="modalManual" class="modalManual">
+            <h3>Manual de usuario <img class="closeModal" src="/src/public/assets/imgs/icons/close.png" alt="Close Modal Icon"></h3>
+            <div class="content"></div>
+        </section>
+        <section id="modalNotepad" class="modalNotepad">
+            <h3>Notas del usuario <img class="closeModal" src="/src/public/assets/imgs/icons/close.png" alt="Close Modal Icon"></h3>
+            <div class="content"></div>
+        </section>
+        <section id="modalClues" class="modalClues">
+            <h3>Pistas del usuario <img class="closeModal" src="/src/public/assets/imgs/icons/close.png" alt="Close Modal Icon"></h3>
+            <div class="content"></div>
+        </section>
+        <section id="modalMusic" class="modalMusic">
+            <h3>Ajustes de música <img class="closeModal" src="/src/public/assets/imgs/icons/close.png" alt="Close Modal Icon"></h3>
+            <div class="content"></div>
+        </section>
+        <section id="modalLogout" class="modalLogout">
+            <h3>Abandonar la sesión</h3>
+            <div class="content">
+                <span>Tu progreso ya está guardado, por lo que puedes salir tranquilamente.</span>
+                <span>¿Deseas salir y abanadonar la sesión?</span>
+                <div class="buttonSection">
+                    <button id="logout">Abandonar juego</button>
+                    <button class="closeModal">Regresar al juego</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <span>Dev by Estanislao Salinas Previte</span>
+        <img src="/src/public/assets/imgs/icons/socialMedia/github.png" alt="Github Logo Icon">
+        <img src="/src/public/assets/imgs/icons/socialMedia/linkedin.webp" alt="LinkedIn Logo Icon">
+    </footer>
+    <!-- SCRIPTS -->
+    <script type="module" src="/src/app.js"></script>
+</body>
+</html>
