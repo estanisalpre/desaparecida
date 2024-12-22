@@ -1,6 +1,7 @@
 //Variables
 $backgroundImage: linear-gradient(60deg, #29323c 0%, #485563 100%);
 $darkBackgroundImageColor: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+$appBackgroundImage: linear-gradient(60deg, #29323c 0%, #485563 100%);
 $darkFontColor: #202020;
 $lightFontColor: #e6e6e6;
 $afacadFont: "Afacad", serif;
@@ -430,13 +431,11 @@ main{
                     @include displayFlex();
                     display: none;
                     @include sizes();
-                    border: 1px solid black;
-                    background-image: url(/src/public/assets/imgs/backgrounds/anaBackground.webp);
+                    background-image: $appBackgroundImage;
 
                     span{
                         color: $lightFontColor;
                     }
-
                 }
             } 
 
