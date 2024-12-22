@@ -346,7 +346,7 @@ main .mainContainer .cellphoneContainer .screenCellphone .navCellphone .rightNav
 main .mainContainer .cellphoneContainer .screenCellphone .homePage {
   padding-top: 50px;
   background-color: #282828;
-  background-image: url(./src/public/assets/imgs/backgrounds/anaBackground.webp);
+  background-image: url(../public/assets/imgs/backgrounds/anaBackground.webp);
 }
 main .mainContainer .cellphoneContainer .screenCellphone .homePage .callApp {
   animation: appFadeIn 0.5s ease forwards;
@@ -424,7 +424,7 @@ main .mainContainer .cellphoneContainer .screenCellphone .homePage .changePage d
   cursor: pointer;
 }
 main .mainContainer .cellphoneContainer .screenCellphone .secondPage {
-  background-image: url(./src/public/assets/imgs/backgrounds/anaBackground.webp);
+  background-image: url(../public/assets/imgs/backgrounds/anaBackground.webp);
   display: none;
 }
 main .mainContainer .cellphoneContainer .screenCellphone .secondPage .secondPageApps {
@@ -464,7 +464,7 @@ main .mainContainer .cellphoneContainer .screenCellphone .secondPage .changePage
 main .mainContainer .cellphoneContainer .screenCellphone .allAppsPage {
   display: none;
   justify-content: center;
-  background-image: url(./src/public/assets/imgs/backgrounds/anaBackground.webp);
+  background-image: url(../public/assets/imgs/backgrounds/anaBackground.webp);
 }
 main .mainContainer .cellphoneContainer .screenCellphone .allAppsPage div {
   width: 100%;
